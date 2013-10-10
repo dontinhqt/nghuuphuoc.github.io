@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <!--[if lt IE 9]><script src="/vendor/jquery/jquery-1.10.1.min.js"></script><![endif]-->
+    <!--[if gte IE 9]><!--><script src="/vendor/jquery/jquery-2.0.2.min.js"></script><!--<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/vendor/html5shiv/html5shiv.min.js"></script>
+    <script src="/vendor/respond/respond.min.js"></script>
+    <![endif]-->
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css"/>
+    <!--[if IE 7]><link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome-ie7.min.css"><![endif]-->
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/vendor/pygments/zenburn.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
 
-    </head>
-    <body>
+    <!-- syntax highlighting CSS -->
+    <!--<link rel="stylesheet" href="/css/syntax.css">-->
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-            <a class="extra" href="/posts">archive</a>
-          </div>
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+</head>
+<body class="j-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 j-profile">
+                        <a href="/"><img src="https://0.gravatar.com/avatar/8f96cb33ee055533c502e02189efaa25?s=150" /></a>
+                        <h3>Phuoc Nguyen</h3>
+                        <small>
+                            Creator of TomatoCMS, NextCMS.<br/>
+                            #PHP #ZendFramework #AngularJS #NodeJS and #MongoDB<br/>
+                            CTO at <a href="http://www.apl.vn" target="_blank">APL Solutions</a>
+                        </small>
+                        <ul class="list-inline">
+                            <li><a href="http://github.com/nghuuphuoc"><i class="icon-github icon-2x"></i></a></li>
+                            <li><a href="http://twitter.com/nghuuphuoc"><i class="icon-twitter icon-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Phuoc Nguyen<br />
-                phuoc@huuphuoc.me
-              </p>
+                <div class="j-content">{{ content }}</div>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/nghuuphuoc">github.com/nghuuphuoc</a><br />
-                <a href="https://twitter.com/nghuuphuoc">@nghuuphuoc</a><br />
-              </p>
-            </div>
-          </div>
         </div>
-
-    </body>
+    </div>
+</body>
 </html>

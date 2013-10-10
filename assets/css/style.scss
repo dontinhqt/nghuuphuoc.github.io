@@ -1,0 +1,57 @@
+// Variables
+// Height of footer
+$footerHeight: 80px;
+$avatarSize: 100px;
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.j-body {
+  border-top: 2px solid red;
+}
+
+.j-profile {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  text-align: center;
+  img {
+    width: $avatarSize;
+    height: $avatarSize;
+    -webkit-border-radius: $avatarSize;
+    -moz-border-radius: $avatarSize;
+    border-radius: $avatarSize;
+  }
+  ul {
+    margin-top: 10px;
+  }
+}
+
+.j-content {
+  margin: 20px 0;
+  h1 {
+    text-align: center;
+  }
+}
+
+.j-posts {
+  li {
+    list-style: none;
+    position: relative;
+    small {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.j-post-meta {
+  text-align: center;
+  font-style: italic;
+}
+
+html, body {
+  height: 100%;
+}

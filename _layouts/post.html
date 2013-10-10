@@ -1,9 +1,15 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<p class="j-post-meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+<div class="j-post-content">
 {{ content }}
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('table').addClass('table table-bordered');
+});
+</script>
