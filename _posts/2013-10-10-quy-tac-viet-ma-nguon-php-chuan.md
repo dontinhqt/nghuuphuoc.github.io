@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quy tắc viết mã nguồn PHP chuẩn [Vietnamese]"
-date:   2013-10-11 00:05:20
+date:   2013-10-10 23:54:20
 ---
 
 Tài liệu này quy định *cách viết mã PHP chuẩn* được tổng hợp dựa trên các nguồn, quy chuẩn sau:

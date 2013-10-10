@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quy tắc đánh số phiên bản phần mềm [Vietnamese]"
-date:   2013-10-11 00:40:15
+date:   2013-10-10 23:40:15
 ---
 
 Tài liệu này hướng dẫn bạn một số quy tắc đánh số phiên bản phần mềm dựa trên chuẩn [SemVer](http://semver.org) (viết tắt của Semantic Versioning),
