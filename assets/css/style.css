@@ -24,6 +24,7 @@ a:hover {
 
 .j-posts li {
   list-style: none;
+  padding-bottom: 5px;
   position: relative; }
   .j-posts li small {
     position: absolute;
