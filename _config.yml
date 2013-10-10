@@ -1,4 +1,9 @@
-name: Phuoc Nguyen
-markdown: redcarpet
-pygments: true
-permalink: /posts/:title
+name:         Phuoc Nguyen
+markdown:     redcarpet
+markdown_ext: markdown,mkd,mkdn,md
+pygments:     true
+permalink:    /posts/:title
+baseurl:      /
+
+redcarpet:
+    extensions: [tables]
