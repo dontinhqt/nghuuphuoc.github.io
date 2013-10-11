@@ -23,23 +23,13 @@ with another free, friendly software named [Lion DiskMaker](http://liondiskmaker
 
 * In the next step, click the _Select and Install file_ button and choose the installer file.
 
-![Select installer file](/img/lion-diskmaker-select-file.png)
-
 * In the next step, click the _Create a boot disk_ button.
-
-![Create a boot disk](/img/lion-diskmaker-create-boot-disk.png)
 
 * In the next step, choose the disk that you want to store the installer.
 
-![Choose disk](/img/lion-diskmaker-choose-disk.png)
-
 * Wait while Lion DiskMaker does its job.
 
-![Creating disk progress](/img/lion-diskmaker-progress.png)
-
 * After the process completed, click the _Quit_ button. You can click the _Open Startup Disk Preference_ button to choose the Startup disk.
-
-![Done](/img/lion-diskmaker-done.png)
 
 After performing the steps above, my Mountain Lion installer are created on external drive as following:
 
