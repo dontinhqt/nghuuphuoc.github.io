@@ -91,9 +91,7 @@ From now on, you can start, stop php-fpm with the following commands:
 |				  | php-fpm can be set to run automatically when the system starts
 |				  | by executing the following command:
 |				  | ```$ sudo port load php54-fpm```
-| Stop php-fpm    | ```bash
-|                 | $ sudo kill `cat /opt/local/var/run/php54/php-fpm.pid`
-|                 | ```
+| Stop php-fpm    | ```bash $ sudo kill `cat /opt/local/var/run/php54/php-fpm.pid` ```
 | Restart php-fpm | Run the stop and start commands, respectively.
 
 *PHP extensions*
