@@ -97,7 +97,7 @@ From now on, you can start, stop php-fpm with the following commands:
 *PHP extensions*
 
 ```bash
-$ sudo port install php54-curl php54-exif php54-gd php54-imagick
+$ sudo port install php54-curl php54-exif php54-gd php54-imagick php54-intl
 php54-mbstring php54-mcrypt php54-mongo php54-mysql php54-pcntl php54-redis
 ```
 
@@ -169,9 +169,7 @@ If you see _Welcome to nginx!_ message when navigating to <http://localhost>, th
     $ sudo nginx -s reload
     ```
 
-![PHP Information](/img/phpinfo.png)
-
-* Create a new file named ```phpinfo.php```, located at the ```/opt/local/share/nginx/html/``` directory, with the following content:
+* Create a new file named ```phpinfo.php```, located at the ```/opt/local/share/nginx/html``` directory, with the following content:
 
     ```php
     <?php
@@ -179,6 +177,8 @@ If you see _Welcome to nginx!_ message when navigating to <http://localhost>, th
     ```
 
 * Point the web browser to <http://localhost/phpinfo.php> to see the information of PHP installed on the server.
+
+![PHP Information](/img/phpinfo.png)
 
 ### Install MongoDB
 

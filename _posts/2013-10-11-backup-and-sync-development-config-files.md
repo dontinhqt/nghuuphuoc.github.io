@@ -7,7 +7,7 @@ date:   2013-10-11 11:07:30
 I've been working on office at days and home at nights and weekends. Duplicating development environment on different devices is boring and sometime it becomes a nightmare.
 So I want the configuration files on these devices to be the same and synchronized together.
 
-Fortunately, it can be done just via two following steps:
+Fortunately, it can be done just via following steps:
 
 * Use a cloud storage which provides synchronize ability on various devices.
 
@@ -27,4 +27,4 @@ $ ln -s /Volumes/data/backup/Dropbox/config/php-fpm.conf /opt/local/etc/php54/ph
 
 So all modifications I make to ```/opt/local/etc/php54/php-fpm.conf``` will be actually saved to the one in Dropbox.
 
-These changes will be applied to my configuration file at home and vice versa!
+These changes will be applied to my configuration file at home, and vice versa!
