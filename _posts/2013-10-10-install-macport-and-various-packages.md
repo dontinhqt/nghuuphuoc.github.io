@@ -64,6 +64,13 @@ Execute the command:
 $ sudo port install php54
 ```
 
+Create the default PHP configuration file named ```php.ini```:
+
+```bash
+$ cd /opt/local/etc/php54/
+$ sudo cp php.ini-development php.ini
+```
+
 *PHP-FPM*
 
 * Execute the command:
