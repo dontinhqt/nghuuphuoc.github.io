@@ -42,8 +42,6 @@ Bạn có thể bỏ qua bước này nếu MacPort đã được cài đặt. C
 $ which port
 ```
 
-![Cài đặt MacPort](/img/macport-install.png)
-
 Có 2 cách để cài đặt một gói, thư viện trên Mac OS:
 
 * Biên dịch
@@ -69,6 +67,8 @@ Thực hiện các bước sau để cài MacPort:
 Tại thời điểm viết tài liệu này, phiên bản mới nhất của MacPort dành cho _Mac OS Mountain Lion_ là [2.1.3](https://distfiles.macports.org/MacPorts/MacPorts-2.1.3-10.8-MountainLion.pkg)
 
 * Click đúp chuột vào file tải về và thực hiện theo hướng dẫn cài đặt.
+
+![Install MacPort](/img/install-macport.png)
 
 * Để sử dụng MacPort, bạn phải thêm đường dẫn đến file ```port``` vào biến môi trường ```$PATH``` bằng cách chạy dòng lệnh sau:
 
