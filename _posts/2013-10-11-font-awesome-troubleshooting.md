@@ -54,3 +54,31 @@ To fix this issue, do the following steps:
     ```bash
     $ sudo apachectl restart"
     ```
+
+## Add mime types for fonts
+
+nginx and Apache don't add mime types for fonts. The following steps ensure the web server server fonts with correct mime type.
+
+**For nginx web server**
+
+By default, the mime types are set in ```<nginx installation dir>/mime.types```. Add the lines below to the ```type``` section in this file:
+
+```
+font/ttf                        ttf;
+font/opentype                   otf;
+application/font-woff           woff;
+application/vnd.ms-fontobject   eot;
+```
+
+Also, remove the line ```application/octet-stream eot;``` from the file.
+
+**For Apache web server**
+
+Add the following lines to ```.htaccess``` file:
+
+```
+AddType font/ttf .ttf
+AddType font/eot .eot
+AddType font/otf .otf
+AddType font/woff .woff
+```
