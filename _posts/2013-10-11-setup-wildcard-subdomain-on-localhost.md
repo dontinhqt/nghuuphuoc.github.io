@@ -6,8 +6,6 @@ date:   2013-10-11 12:22:06
 
 This article shows step-by-step instructions to setup ```*.domain.local``` domains on local environment.
 
-# Config
-
 On MacOS, it is NOT possible to add wildcard subdomains using ```/etc/hosts``` file as below:
 
 ```
