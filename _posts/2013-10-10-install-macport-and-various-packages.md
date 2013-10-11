@@ -20,8 +20,6 @@ There are two ways to install a library, package on MacOS:
 
 ## Install MacPort
 
-![Install MacPort](/img/macport-install.png)
-
 * Download and install the latest version of [XCode](https://developer.apple.com/xcode/)
 * Launch XCode from _Application_ directory, choose _XCode &rarr; Preferences_.
 Click the _Downloads_ tab, and click the _Install_ button associating with the _Command Line Tools_ section.
@@ -35,6 +33,8 @@ Click the _Downloads_ tab, and click the _Install_ button associating with the _
 
 * Download the latest version of [MacPort](http://www.macports.org/install.php). At the time of writing, the latest version 2.1.3 is available for [Mountain Lion](https://distfiles.macports.org/MacPorts/MacPorts-2.1.3-10.8-MountainLion.pkg).
 Double-click the downloaded file and follow the install instruction.
+
+![Install MacPort](/img/install-macport.png)
 
 ## Install various packages
 
