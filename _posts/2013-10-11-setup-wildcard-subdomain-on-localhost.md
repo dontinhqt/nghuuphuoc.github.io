@@ -176,6 +176,7 @@ $ sudo sudo port load dnsmasq
 
 ```
 address=/.local/127.0.0.1
+listen-address=127.0.0.1
 ```
 
 You can check the local domain:
