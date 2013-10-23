@@ -154,3 +154,76 @@ In some cases, we need to flush DNS cache:
 ```bash
 $ dscacheutil -flushcache
 ```
+
+## UPDATE: Use dnsmasq as an alternative way
+
+The following steps show you how to use ```dnsmasq``` to setup wildcard domain for localhost:
+
+* Create ```local``` domain by adding to ```/etc/hosts``` the following line:
+
+```
+127.0.0.1  local
+```
+
+* Install dnsmasq and set it to launch at startup:
+
+```bash
+$ sudo port install dnsmasq
+$ sudo sudo port load dnsmasq
+```
+
+* Open the dnsmasq configuration file which is located at ```/opt/local/etc/dnsmasq.conf``` and add the line:
+
+```
+address=/.local/127.0.0.1
+```
+
+You can check the local domain:
+
+```bash
+$ ping domain.local
+$ dig @localhost domain.local
+
+; <<>> DiG 9.8.3-P1 <<>> @localhost domain.local
+; (3 servers found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17555
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;domain.local.			IN	A
+
+;; ANSWER SECTION:
+domain.local.		0	IN	A	127.0.0.1
+
+;; Query time: 0 msec
+;; SERVER: ::1#53(::1)
+;; WHEN: Thu Oct 24 00:04:43 2013
+;; MSG SIZE  rcvd: 44
+```
+
+Check the sub domain:
+
+```bash
+$ ping sub.domain.local
+$ dig @localhost sub.domain.local
+
+; <<>> DiG 9.8.3-P1 <<>> @localhost sub.domain.local
+; (3 servers found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 54492
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;sub.domain.local.			IN	A
+
+;; ANSWER SECTION:
+sub.domain.local.		0	IN	A	127.0.0.1
+
+;; Query time: 0 msec
+;; SERVER: ::1#53(::1)
+;; WHEN: Thu Oct 24 00:05:24 2013
+;; MSG SIZE  rcvd: 48
+```
